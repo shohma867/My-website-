@@ -1,42 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="google-site-verification" content="l_nPN-C0UNOjIEG-qb-fW6ay_ekVGB_-kMjH1JA7cio" />
-  <title>Meri Website</title>
-
   <meta charset="UTF-8">
-  <meta name="description" content="Yeh Abu Shohma ki pehli website hai jo HTML CSS aur JavaScript se banayi gayi hai.">
-  <meta name="keywords" content="Abu Shohma, pehli website, HTML CSS website">
-  <meta name="author" content="Abu Shohma">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="ABCDEFG1234567" />
+
+  <!-- SEO meta -->
+  <meta name="description" content="Abu Shohma ki pehli professional website. HTML, CSS aur JavaScript ka use karke mobile-friendly aur modern design.">
+  <meta name="keywords" content="Abu Shohma, website, HTML CSS JavaScript, mobile-friendly website, GitHub Pages">
+  <meta name="author" content="Abu Shohma">
+
+  <title>Abu Shohma | Meri Website</title>
+
+  <!-- CSS Styling -->
   <style>
     body {
-      background-color: #f2f2f2;
+      background-color: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      font-family: Arial;
+      color: #333;
     }
 
-    button {
-      padding: 10px 20px;
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 30px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .button {
+      padding: 12px 25px;
       font-size: 16px;
-      background-color: black;
-      color: white;
+      background-color: #000;
+      color: #fff;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #222;
+      color: #fff;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Hello 👋</h1>
-  <p>Yeh meri pehli website hai.</p>
+  <header>
+    <h1>Abu Shohma</h1>
+    <p>Meri Pehli Professional Website</p>
+  </header>
 
-  <button onclick="msg()">Click Me</button>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Namaste! Mera naam <strong>Abu Shohma</strong> hai. 
+      Yeh website maine HTML, CSS aur JavaScript se banayi hai. 
+      Ye fully mobile-friendly aur modern design ke saath hai.
+    </p>
+
+    <h2>My First Project</h2>
+    <p>
+      Button try karo aur dekho! 🎉
+    </p>
+
+    <button class="button" onclick="showMessage()">Click Me</button>
+  </section>
+
+  <footer>
+    &copy; 2026 Abu Shohma. All rights reserved.
+  </footer>
 
   <script>
-    function msg() {
+    function showMessage() {
       alert("Button kaam kar raha hai 🎉");
     }
   </script>
