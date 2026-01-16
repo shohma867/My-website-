@@ -8,38 +8,53 @@
   <meta name="google-site-verification" content="ABCDEFG1234567" />
 
   <!-- SEO meta -->
-  <meta name="description" content="Abu Shohma ki pehli professional website. HTML, CSS aur JavaScript ka use karke mobile-friendly aur modern design.">
-  <meta name="keywords" content="Abu Shohma, website, HTML CSS JavaScript, mobile-friendly website, GitHub Pages">
+  <meta name="description" content="Abu Shohma ki multi-section professional website. HTML, CSS aur JavaScript se mobile-friendly design.">
+  <meta name="keywords" content="Abu Shohma, website, HTML CSS JavaScript, professional website, GitHub Pages">
   <meta name="author" content="Abu Shohma">
 
-  <title>Abu Shohma | Meri Website</title>
+  <title>Abu Shohma | Pro Website</title>
 
-  <!-- CSS Styling -->
   <style>
     body {
-      background-color: #f9f9f9;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background: #f9f9f9;
       color: #333;
     }
 
     header {
       background-color: #222;
-      color: #fff;
-      padding: 30px 0;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
     }
 
     section {
-      padding: 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.6;
     }
 
     .button {
@@ -51,52 +66,99 @@
       border-radius: 6px;
       cursor: pointer;
       transition: 0.3s;
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
     .button:hover {
       background-color: #555;
     }
 
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: 250px;
+      vertical-align: top;
+    }
+
     footer {
-      margin-top: 30px;
-      padding: 15px;
       background-color: #222;
-      color: #fff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
-
 <body>
 
   <header>
     <h1>Abu Shohma</h1>
-    <p>Meri Pehli Professional Website</p>
+    <p>Multi-section Professional Website</p>
   </header>
 
-  <section>
+  <!-- About Section -->
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      Namaste! Mera naam <strong>Abu Shohma</strong> hai. 
-      Yeh website maine HTML, CSS aur JavaScript se banayi hai. 
-      Ye fully mobile-friendly aur modern design ke saath hai.
+      Namaste! Mera naam <strong>Abu Shohma</strong> hai.  
+      Main web development seekh raha hoon aur yeh meri multi-section website hai.  
+      Yeh website HTML, CSS aur JavaScript se banayi gayi hai, mobile-friendly aur modern design ke saath.
     </p>
+  </section>
 
-    <h2>My First Project</h2>
-    <p>
-      Button try karo aur dekho! 🎉
-    </p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="card">
+      <h3>Project 1</h3>
+      <p>HTML & CSS based portfolio project.</p>
+    </div>
+    <div class="card">
+      <h3>Project 2</h3>
+      <p>JavaScript interactive button demo.</p>
+    </div>
+    <div class="card">
+      <h3>Project 3</h3>
+      <p>GitHub Pages website live deployment.</p>
+    </div>
+  </section>
 
-    <button class="button" onclick="showMessage()">Click Me</button>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Apna message bhejne ke liye form fill karo:</p>
+    <form onsubmit="submitForm(event)">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+      <button class="button" type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    &copy; 2026 Abu Shohma. All rights reserved.
+    &copy; 2026 Abu Shohma. All Rights Reserved.
   </footer>
 
   <script>
     function showMessage() {
       alert("Button kaam kar raha hai 🎉");
+    }
+
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Form submit ho gaya! 👍");
     }
   </script>
 
